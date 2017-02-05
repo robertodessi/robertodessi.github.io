@@ -6,7 +6,7 @@
 	<link rel="icon" href="./favicon.png" type="image/png">
 	<title>Roberto Dessì</title>
 </head>
-<body>
+<body onload="last_modified()">
 	<em><font size="5"><strong>Roberto Dessì</strong></font></em>
 	<br>	
 	roberto <i>dot</i> dessi11 <i>at</i> gmail <i>dot</i> com
@@ -23,7 +23,7 @@
 		<br>
 		Here you can find my <a href="./Roberto_Dessi_resume.pdf">resume</a>.
 	</p>
-	
+
 	<hr />
 	
 	<!-- EDUCATION -->
@@ -76,11 +76,12 @@
 		<ul>
 			<li>
 				<font size="3"><b>Friends.</b></font>
-				Some great folks I had the pleasure to meet or collaborate with:
+				Some great folks I had the pleasure to meet or work with:
 				<ul>
 					<li><a href="">Sanjana Kapisthalam</a></li>
 					<li><a href="http://ceribbo.com/">Giacomo Ceribelli</li>
 					<li><a href="https://github.com/jacopo1395">Jacopo Carlini</a></li>
+					<li><a href="https://github.com/c-simone">Simone Conia</a></li
 				</ul>
 			</li>
 			<li>
@@ -102,8 +103,8 @@
 	 				</li>
 	 				<li>
 		 				Currently reading:
-						<a href="https://en.wikipedia.org/wiki/Requiem_for_a_Dream_(novel)"> Requiem for a Dream</a> and
-						<a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach">Gödel, Escher, Bach: An Eternal Golden Braid</a>	
+						<a href="https://en.wikipedia.org/wiki/The_Catcher_in_the_Rye"> Catcher in the rye</a> and
+						<a href="https://en.wikipedia.org/wiki/The_Aleph_(short_story_collection)">L'Aleph</a>	
 	 				</li>
 	 			</ul>
  			</li>
@@ -111,28 +112,37 @@
 				<font size="3"><b>Movies.</b></font> 
 				<ul>
 					<li>
-						<a href="http://www.imdb.com/title/tt0337930/">Last watched</a>
+						<a href="http://www.imdb.com/title/tt0477139/">Last watched</a>
 					</li>
 					<li>
 						<a href="http://www.imdb.com/title/tt0189584/">Last started</a>
 					</li>
 					<li>
-						<a href="http://www.mymovies.it/film/2016/itsonlytheendoftheworld/">To watch next</a>
+						<a href="http://www.imdb.com/title/tt2763304/">To watch next</a>
 					</li>
 				</ul>
 			</li>
 			<li>
 				<font size="3"><b>Music.</b></font>
 				<br>
-				A interesting playlist. Mainly songwrites. <br> <font color="red">Warning</font> you may be disappointed by finding some Nobel Laureates among the artists
+				An interesting playlist. Mainly songwriters. <br> <font color="red">Warning:</font> you may be disappointed by finding some Nobel Laureates among the artists
 				<br>
 				<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Atecnotenda%3Aplaylist%3A4MsEgLHlj2VlvXHQPTze1W" width="480" height="300" frameborder="0" allowtransparency="true"></iframe>
 			</li>
 			<li>
-				<font size="3"><b>TV Show.</b></font> I am currently watching How to Get Away With Murder, Big Bang Theory and Westworld. Last one I watched was Stranger things
+				<font size="3"><b>TV Show.</b></font> I am currently watching How to Get Away With Murder (both are still airing either weekly every other week, unfortunately -I'm looking at you TBBT!), Big Bang Theory and Westworld. Last one I watched was Stranger things
 			</li>
 		</ul>
 	</p>
+	<br>
+	<br><br>
+	<i>Last updated: <p id="last_update"></p></i>
+	<script>
+		function last_modified() {
+	    	var x = new Date(document.lastModified);
+	    	document.getElementById("last_update").innerHTML = x;
+		}
+	</script>
 
 </body>
 </html>
